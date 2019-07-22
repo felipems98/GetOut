@@ -3,6 +3,7 @@
 #include <locale.h>
 #include <string.h>
 #include <windows.h>
+//Isso e um teste de GIT
 
 //--------------------
 //declaração Função de tutorial 
