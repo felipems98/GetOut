@@ -3,7 +3,7 @@
 #include <locale.h>
 #include <string.h>
 #include <windows.h>
-//Isso e um teste de GIT
+
 
 //--------------------
 //declaração Função de tutorial 
@@ -82,7 +82,7 @@ r2=&resp2;
     //--------------------------
     //Caso algum numero diferente dos especificos seja selecionado.
         else if (*r == 2){
-    		printf("bom...então....VAMOS COMEÇAR");
+    		printf("bom...então....VAMOS COMEÇAR \n");
     		loop = 1;
 	}
     
@@ -94,7 +94,7 @@ r2=&resp2;
         }
         while(loop ==0);
 system ("pause");
-    printf(" \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n");
+    printf(" \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n ");
     //------------------
 	//começo do game
     //------------------
@@ -141,21 +141,22 @@ system ("pause");
                 else if(*r == 3){
                     printf("\n%s: Claro, Claro. Você foi escolhido para a purificação\nVocê foi escolhido para ser testado, se sobreviver\npode se considerar purificado, do contrario...bem....você morre. Meio Obviu né?", guard1);
                     loop = 1;
+                    	fflush(stdin);
                     	do{
-                    		printf("1 - Purificação? do que está falando? \n2 - Morrer? Por favor me tire daqui!\n 3 - Voltar ");
+                    		printf("\n1 - Purificação? do que está falando? \n2 - Morrer? Por favor me tire daqui!\n3 - Voltar ");
                     		scanf("%d", r2);
-                    		 if(r2 == 1){
+                    		 if(*r2 ==  1){
                     		 	printf("\n %s: Sim, sim. Não te contaram nada sobre isso? Droga sempre sobra pra mim.\n", guard1);
                     		 	system ("pause");
                     		 	printf("%s: Todo ano nós, os veteranos da fraternidade B... ah é não posso falar de qual somos. Enfim.\n Todos os anos nós fazemos a purificação com um calouro selecionado. Se você sobreviver a todos os testes, pode se tornar um de nós. Se não...bom... você ja sabe", guard1);
 							 	loop = 1;
 							 }
-							 else if(r2 == 2){
+							 else if(*r2 == 2){
 							 	printf("%s: Nah nah, ainda não. Você não tem escolhas, precisa passar pelos testes.");
 							 	loop2 = 1;
 							 	
 							 }
-							 else if(r2 == 3){
+							 else if(*r2 == 3){
 							 	
 							 	loop2 = 0;
 							 	
@@ -177,6 +178,7 @@ system ("pause");
             }
             while (loop !=0);
             //FIM PERGUNTAS
+    
 
 
 
