@@ -135,7 +135,7 @@ system ("pause");
     
     
     //---------------------------
-    //PT1: Inicio
+    //PT1: Indrodução
     //--------------------------
     void PtIntroducao(){
     
@@ -219,15 +219,26 @@ system ("pause");
             }
             while (loop !=0);
             //FIM PERGUNTAS
-    
-
-
-
-
+printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 }
+///FIM Introdução
+
+//Inicio PT 1: Escuridão
 
 
-
+void Escuridao(){
+	r=&resp;
+	r2=&resp2;	
+	printf("Ao fundo você escuta barulho de coisas caindo. %s olha instaneamente para a direção do barulho." guard1);
+	system("pause");
+	printf("\n%s: Droga! Não saia daqui que eu ja volto", guard);
+	system("pause");
+	printf("Em seguida ele sai e te deixa sozinho na cela escura.")
+	system("pause");
+	
+	
+	
+}
 
 
 
