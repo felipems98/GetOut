@@ -8,27 +8,23 @@
 //--------------------
 //declaração Função de tutorial 
 tutorial();
+void PtIntroducao();
 //--------------------------------
 
 //=============================
 // funções sonoras
 void intro(){
 	Beep (659,300);
-	Beep (349,250);
-	Beep (698,250);
+	Beep (349,300);
+	Beep (698,300);
 	Beep (369,300);
 	Beep (739,650);
 	
 }
-//=======================
 
-//=======================
-//funções de erro
-void respInv(){
-	printf("Resposta Invalida.\n");
-}
-
-
+//------------------------------------
+//Definição de variaveis Globais
+//-----------------------------------
 char nome[20];
 char guard1[20] = "???";
 char guard2[20] = "???";
@@ -42,6 +38,36 @@ int resp2;
 int *r;
 int *r2;
 
+
+//-----------------------------------------------
+//Funções Of History ou adicionais
+//-----------------------------------------------
+
+//Função chamada para introduzir o tutorial.
+tutorial(){
+    printf("Bem vindo(a) ao tutorial, %s \n", nome);
+    system("pause");
+    printf("durante o jogo, varios dialogos e narrativas vão sendo apresentados na tela. \n");
+    system("pause");
+    printf("em alguns momentos serão necessario realizar ações, ue serão demarcadas com um numero especifico. \nBasta apenas digitar o numero correspondente a ação desejada e apertar ENTER em seguida. \n Lembrando que deve ser utilizado apenas numeros para as respostas");
+    system("pause");
+    printf("Lembrando que todas as suas decisões terão consequencias no desenvolver da historia e no seu final, então escolha sabiamente.");
+    system("pause");
+    printf("DIVIRTA-SE!!");
+
+    }
+    
+    
+// Função chamada para repostas invalidas
+void respInv(){
+	printf("Resposta Invalida.\n");
+}
+
+
+
+//------------------------------------
+//Main Menu do jogo
+//-----------------------------------
 int main(){
 
 
@@ -57,6 +83,7 @@ r2=&resp2;
     printf("--------------------------------------------------------------\n");
     printf("               benvindo(a) ao Tente Fugir\n");
     printf("--------------------------------------------------------------\n");
+    intro();
     system("pause");
     printf("Qual o seu nome? \n");
     gets(nome);
@@ -95,9 +122,23 @@ r2=&resp2;
         while(loop ==0);
 system ("pause");
     printf(" \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n ");
-    //------------------
+     PtIntroducao();
+	 return 0;
+}
+
+
+
+	//------------------
 	//começo do game
     //------------------
+    
+    
+    
+    //---------------------------
+    //PT1: Inicio
+    //--------------------------
+    void PtIntroducao(){
+    
         printf("%s: Heey! acorde!\n", guard1);
         system ("pause");
         printf("\nVocê com muito esforço consegue abrir os olhos.\n");
@@ -182,7 +223,7 @@ system ("pause");
 
 
 
-return 0;
+
 }
 
 
@@ -191,18 +232,6 @@ return 0;
 
 
 
-tutorial(){
-    printf("Bem vindo(a) ao tutorial, %s \n", nome);
-    system("pause");
-    printf("durante o jogo, varios dialogos e narrativas vão sendo apresentados na tela. \n");
-    system("pause");
-    printf("em alguns momentos serão necessario realizar ações, ue serão demarcadas com um numero especifico. \nBasta apenas digitar o numero correspondente a ação desejada e apertar ENTER em seguida. \n Lembrando que deve ser utilizado apenas numeros para as respostas");
-    system("pause");
-    printf("Lembrando que todas as suas decisões te consequencias no desenvolver da historia e no seu final, então escolha sabiamente.");
-    system("pause");
-    printf("DIVIRTA-SE!!");
-
-    }
 
 
 
